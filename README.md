@@ -1,2 +1,2 @@
-# atomiv-frontend-ts-vue
-Atomiv - Frontend (TS - Vue)
+# atomiv-frontend-vue
+Atomiv - Frontend (Vue)
