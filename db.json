@@ -1,6 +1,15 @@
 {
   "customers": [],
   "orders": [],
-  "products": [],
+  "products": [
+    {
+      "id": 1,
+      "code": "C145",
+      "name": "Televsion set",
+      "description": "High quality product",
+      "price": 1000,
+      "isListed": true
+    }
+  ],
   "suppliers": []
 }
