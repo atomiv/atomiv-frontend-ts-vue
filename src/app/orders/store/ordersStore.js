@@ -1,22 +1,7 @@
-/************
-*   STATE   *
-************/
-const state = {}
+import factory from '@/store/factory'
 
-/**************
-*   GETTERS   *
-**************/
-const getters = {}
-
-/**************
-*   ACTIONS   *
-**************/
-const actions = {}
-
-/****************
-*   MUTATIONS   *
-****************/
-const mutations = {}
+const ordersStore = factory('orders')
+const { state, getters, actions, mutations } = ordersStore
 
 export default {
   namespaced: true,
