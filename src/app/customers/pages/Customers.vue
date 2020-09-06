@@ -4,6 +4,32 @@
   </div>
 </template>
 
+<script>
+import { createNamespacedHelpers } from 'vuex'
+
+const { mapState, mapActions } = createNamespacedHelpers('customers')
+
+export default {
+  name: 'Customers',
+
+  created () {
+    this.loadCustomers()
+  },
+
+  computed: {
+    ...mapState({
+      customers: state => state.customers
+    })
+  },
+
+  methods: {
+    ...mapActions({
+      loadCustomers: 'load'
+    })
+  }
+}
+</script>
+
 <style lang="scss" scoped>
 @import '@/-common-/assets/style/settings/_module-settings';
 

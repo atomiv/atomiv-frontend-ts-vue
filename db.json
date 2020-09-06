@@ -1,6 +1,18 @@
 {
-  "customers": [],
-  "orders": [],
+  "customers": [
+    {
+      "id": 1,
+      "firstName": "Paul",
+      "lastName": "Michels",
+      "email": "paul.michels@gmail.com"
+    },
+    {
+      "id": 2,
+      "firstName": "John",
+      "lastName": "Adams",
+      "email": "j.adams@gmail.com"
+    }
+  ],
   "products": [
     {
       "id": 1,
