@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <header id="nav">
-    </header>
+    <Header />
     <main id="main">
       <router-view />
     </main>
@@ -9,8 +8,14 @@
 </template>
 
 <script>
+import Header from '../-common-/components/Header'
+
 export default {
-  name: 'App'
+  name: 'App',
+
+  components: {
+    Header
+  }
 }
 </script>
 
@@ -21,14 +26,14 @@ export default {
   font-family: sans-serif;
   color: $font_color;
 
-  #nav {
-    width: 100%;
-  }
-
   #main {
     width: 100%;
     max-width: 144rem;
+    padding: 5rem 0 3rem;
     margin: 0 auto;
+    @include breakpoint(desktop) {
+      padding: 8rem 0 4rem;
+    }
   }
 }
 </style>
