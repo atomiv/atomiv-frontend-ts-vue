@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import Header from '../-common-/components/Header'
+import Header from '@/-common-/components/Header'
 
 export default {
   name: 'App',
@@ -29,10 +29,19 @@ export default {
   #main {
     width: 100%;
     max-width: 144rem;
-    padding: 5rem 0 3rem;
+    padding: 6rem 0 3rem;
     margin: 0 auto;
     @include breakpoint(desktop) {
-      padding: 8rem 0 4rem;
+      padding: 10rem 0 5rem;
+    }
+
+    h1 {
+      @include fontSizeRem(20, 40);
+      text-align: center;
+      margin-bottom: 1rem;
+      @include breakpoint(desktop) {
+        margin-bottom: 2rem;
+      }
     }
   }
 }
