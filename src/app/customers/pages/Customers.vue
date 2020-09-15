@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Customers</h1>
-    <template v-if="customers">
+    <template v-if="customersList">
       <Table
         :value="customersList"
         :columns="columns"

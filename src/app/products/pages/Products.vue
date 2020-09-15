@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Products</h1>
-    <template v-if="products">
+    <template v-if="productsList">
       <Table
         :value="productsList"
         :columns="columns"
